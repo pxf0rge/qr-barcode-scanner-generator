@@ -1,0 +1,63 @@
+name: qr_barcode_app
+description: Production Android QR & Barcode generator and scanner.
+publish_to: "none"
+
+version: 1.0.3+6
+
+environment:
+  sdk: ^3.13.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^3.4.3
+  go_router: ^18.0.1
+  qr: ^3.0.2
+  qr_flutter: ^4.1.0
+  barcode: ^2.2.9
+  barcode_widget: ^2.0.4
+  mobile_scanner: ^7.4.2
+  google_mobile_ads: ^9.1.0
+  share_plus: ^13.3.0
+  path_provider: ^2.1.6
+  permission_handler: ^13.0.2
+  url_launcher: ^6.3.2
+  shared_preferences: ^2.5.5
+  package_info_plus: ^10.2.1
+  gal: ^2.3.3
+  xml: ^7.0.1
+  image: ^4.10.1
+  equatable: ^3.0.0
+  intl: ^0.20.3
+  uuid: ^4.6.0
+  connectivity_plus: ^7.3.1
+  flutter_contacts: ^2.5.0
+  image_picker: ^1.2.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  mocktail: ^1.0.4
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/app_icon.png
+    - assets/branding/
+    - assets/ui/
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  # Source art: assets/app_icon.png → processed opaque under branding/
+  image_path: assets/branding/app_icon.png
+  adaptive_icon_background: assets/branding/app_icon.png
+  adaptive_icon_foreground: assets/branding/app_icon.png
+  adaptive_icon_foreground_inset: 0
+  min_sdk_android: 24
+  remove_alpha_ios: false
